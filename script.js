@@ -1,3 +1,11 @@
+import 'ag-psd/initialize-canvas';
+import { readPsd } from 'ag-psd';
+import { writePsd } from 'ag-psd';
+import * as fs from 'fs';
+
+const temp_one = fs.readFileSync();
+const temp_two = fs.readFileSync();
+
 const updateWeb = (update) => {
     let main = document.querySelector("main"); // main is an element
     main.innerHTML = markup(input);
@@ -12,11 +20,12 @@ const updateWeb = (update) => {
     return `
     <div>
       <h3>Upload Document</h3>
-      <ul>
-      <input type="file" id="myFile" name="filename"/>
-
-      <input type="submit" value = "Submit"/>
-      </ul>
+      <body>
+        Upload csv file:
+        <br><br>
+        <input type="file" id="myFile" name="filename"/>
+        <input type="submit" value = "submit"/>
+      </body>
     </div>
   `;
   };
