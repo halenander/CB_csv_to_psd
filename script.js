@@ -3,8 +3,8 @@ import { readPsd } from 'ag-psd';
 import { writePsd } from 'ag-psd';
 import * as fs from 'fs';
 
-const temp_one = fs.readFileSync();
-const temp_two = fs.readFileSync();
+const temp_one = fs.readFileSync('/psd-files/Kahala-Q1.psd');
+const temp_two = fs.readFileSync('/psd-files/ML-WL-INSIDE.psd');
 
 const updateWeb = (update) => {
     let main = document.querySelector("main"); // main is an element
