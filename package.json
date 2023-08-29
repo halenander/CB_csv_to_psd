@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "ag-psd": "^17.0.2"
+    "ag-psd": "^17.0.2",
+    "fs": "^0.0.1-security"
   }
 }
