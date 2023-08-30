@@ -1,14 +1,14 @@
 const express = require("express");
-const agpsd = require("ag-psd");
-const fs = require("fs");
-const canvas = require("ag-psd/initialize-canvas");
+// const agpsd = require("ag-psd");
+// const fs = require("fs");
+// const canvas = require("ag-psd/initialize-canvas");
 
 const server = express();
 const port = 5050;
 
 //create get, post, put, etc functions
 
-server.get("/", function (req, res) {
+server.get("/", (req, res) => {
   res.sendFile("site.html", { root: __dirname });
 });
 
@@ -16,16 +16,16 @@ server.listen(port, () => {
   console.log(`Now listening on port ${port}`);
 });
 
-canvas.createElement();
+// canvas.createElement();
 
-const buff_one = fs.readFileSync("psd-files/Kahala-Q1.psd");
-const buff_two = fs.readFileSync("psd-files/ML-WL-INSIDE.psd");
+// const buff_one = fs.readFileSync("psd-files/Kahala-Q1.psd");
+// const buff_two = fs.readFileSync("psd-files/ML-WL-INSIDE.psd");
 
-const temp_one = agpsd.readPsd(buff_one);
-console.log(temp_one);
+// const temp_one = agpsd.readPsd(buff_one);
+// console.log(temp_one);
 
 const updateWeb = (update) => {
-  let main = document.querySelector("main"); // main is an element
+  let main = document.querySelector("main");
   main.innerHTML = markup(input);
   console.info(update);
 };
@@ -48,6 +48,6 @@ const markup = (input) => {
   `;
 };
 
-const main = document.createElement("main");
-main.innerHTML = markup(input);
-document.body.appendChild(main);
+// const main = document.createElement("main");
+// main.innerHTML = markup(input);
+// document.body.appendChild(main);

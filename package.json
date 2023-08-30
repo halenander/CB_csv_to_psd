@@ -1,9 +1,8 @@
 {
   "dependencies": {
-    "ag-psd": "^17.0.2",
     "express": "^4.18.2",
-    "fs": "^0.0.1-security",
-    "canvas": "^2.11.0"
+    "psd": "^3.4.0",
+    "node.js": "^0.0.1-security"
   },
   "name": "cb_csv_to_psd",
   "description": "Javascript tool to convert csv data into a psd flyer format for Coldwell Banker.",
