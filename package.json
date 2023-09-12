@@ -1,15 +1,18 @@
 {
+  "type": "module",
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "psd": "^3.4.0",
-    "node.js": "^0.0.1-security"
+    "node.js": "^0.0.1-security",
+    "psd": "^3.4.0"
   },
   "name": "cb_csv_to_psd",
   "description": "Javascript tool to convert csv data into a psd flyer format for Coldwell Banker.",
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/halenander/CB_csv_to_psd/issues"
   },
-  "homepage": "https://github.com/halenander/CB_csv_to_psd#readme"
+  "homepage": "https://github.com/halenander/CB_csv_to_psd#readme",
+  "devDependencies": {
+    "coffee-script": "^1.7.1"
+  }
 }
